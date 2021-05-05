@@ -68,9 +68,6 @@
 
     <div id="body">
       <div class="form-group">
-        <a href="transaction_flow.PNG" target="_blank">
-          <img src="transaction_flow.PNG" style="width:100%">
-        </a>
         <label>Query All Farm Produce in Ledger</label>
         <p><input id="queryAllProduce" type="submit" value="Query" class="btn btn-primary" ng-click="queryAllProduce()"></p>
       </div>
@@ -133,20 +130,19 @@
         <br>
         Produce id: <input class="form-control" type="text" placeholder="Ex: 6" ng-model="produce.id">
         Product type: <select class="form-control" id="sel1" ng-model="produce.product">
-                      <option>Chicken</option>
-                      <option>Beef</option>
-                      <option>Salmon</option>
-                      <option>Oyster</option>
-                      <option>Lamb</option>
-                      <option>Caviar</option>
-                      <option>Pork</option>
+                      <option>Rice</option>
+                      <option>Wheat</option>
+                      <option>Ragi</option>
+                      <option>Maize</option>
+                      <option>Bajra</option>
+                      <option>Barley</option>
                       </select>
         Product weight: <input class="form-control" type=number step=0.01 placeholder="Ex: 1000.32" ng-model="produce.weight">
         Organic: <input class="form-control" type=checkbox checked=checked ng-model="produce.organic">
         Location longitude: <input id="createName" class="form-control" type="text" placeholder="Ex: 28.012" ng-model="produce.longitude"> 
         Location latitude: <input id="createName" class="form-control" type="text" placeholder="Ex: 150.405" ng-model="produce.latitude">
         Timestamp: <input class="form-control" type=datetime-local step=70 ng-model="produce.timestamp">
-        Owner name: <input class="form-control" type="text" placeholder="Ex: Sakya" ng-model="produce.holder">
+        Owner name: <input class="form-control" type="text" placeholder="Ex: Adithi" ng-model="produce.holder">
         <input id="createSubmit" type="submit" value="Create" class="btn btn-primary" ng-click="recordProduce()"> 
       </div>
 
@@ -155,7 +151,7 @@
         <h5 style="color:green;margin-bottom:2%" id="success_holder">Successfully updated Ledger! Tx ID: {{change_holder}}</h5>
         <h5 style="color:red;margin-bottom:2%" id="error_holder">Error: Please enter a valid Product Id</h5>
         Enter a ID of the product to transfer ownership: <input class="form-control" name="assetSelect" placeholder="Ex: 1" ng-model="holder.id">
-        Enter name of new owner: <input class="form-control" name="assetSelect" placeholder="Ex: Dalio" ng-model="holder.name">
+        Enter name of new owner: <input class="form-control" name="assetSelect" placeholder="Ex: Megha" ng-model="holder.name">
         <input id="transferSubmit" type="submit" value="Change" class="btn btn-primary" ng-click="changeHolder()">
       </div>
 

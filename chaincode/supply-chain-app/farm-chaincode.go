@@ -92,11 +92,11 @@ Pre-populate the ledger with some initial data of farm produce
  */
 func (s *SmartContract) initLedger(APIstub shim.ChaincodeStubInterface) sc.Response {
 	produce := []Produce{
-		Produce{Product: "Chicken", Weight: "1400.00", Organic: "true", Location: "67.0006, -70.5476", Timestamp: "Fri Jun 22 2018 11:02:01 GMT+0530 (India Standard Time)", Holder: "Sakya"},
-		Produce{Product: "Beef", Weight: "1000.00", Organic: "false", Location: "91.2395, -49.4594", Timestamp: "Fri Jan 11 2019 12:01:01 GMT+0800 (Singapore Standard Time)", Holder: "Ilya"},
-		Produce{Product: "Pork", Weight: "1200.00", Organic: "false", Location: "58.0148, 59.01391", Timestamp: "Fri Jan 11 2019 12:05:21 GMT+0800 (Singapore Standard Time)", Holder: "Dan"},
-		Produce{Product: "Salmon", Weight: "1500.00", Organic: "true", Location: "-45.0945, 0.7949", Timestamp: "Wed Mar 13 2019 10:05:01 GMT+0800 (Singapore Standard Time)", Holder: "George"},
-		Produce{Product: "Salmon", Weight: "2400.00", Organic: "true", Location: "-107.6043, 19.5003", Timestamp: "Fri Mar 15 2019 20:00:01 GMT+0800 (Singapore Standard Time)", Holder: "John"},
+		Produce{Product: "Rice", Weight: "1400.00", Organic: "true", Location: "67.0006, -70.5476", Timestamp: "Fri Jun 22 2018 11:02:01 ", Holder: "Ramu"},
+		Produce{Product: "Maize", Weight: "1000.00", Organic: "false", Location: "91.2395, -49.4594", Timestamp: "Fri Jan 11 2019 12:01:01 ", Holder: "Lekha"},
+		Produce{Product: "Ragi", Weight: "1200.00", Organic: "false", Location: "58.0148, 59.01391", Timestamp: "Fri Jan 11 2019 12:05:21 ", Holder: "Shankar"},
+		Produce{Product: "Barley", Weight: "1500.00", Organic: "true", Location: "-45.0945, 0.7949", Timestamp: "Wed Mar 13 2019 10:05:01 ", Holder: "Mahesh"},
+		Produce{Product: "Rice", Weight: "2400.00", Organic: "true", Location: "-107.6043, 19.5003", Timestamp: "Fri Mar 15 2019 20:00:01 ", Holder: "Rani"},
 	}
 
 	count := 0
